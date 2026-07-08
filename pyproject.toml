@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mxg-n5183b"
+version = "1.0.0"
+description = "Python driver and CLI for the Keysight MXG N5183B RF signal generator, used for RF characterization in radio astronomy receiver systems."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [
+    { name = "Patricio Alarcón Díaz", email = "PatrickADz@users.noreply.github.com" }
+]
+keywords = ["scpi", "pyvisa", "signal-generator", "keysight", "instrumentation", "radio-astronomy"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+]
+dependencies = [
+    "pyvisa>=1.13",
+]
+
+[project.urls]
+Homepage = "https://github.com/PatrickADz/mxg-n5183b-python"
+
+[project.scripts]
+mxg-n5183b = "mxg_n5183b.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
