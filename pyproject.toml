@@ -7,7 +7,7 @@ name = "mxg-n5183b"
 version = "1.0.0"
 description = "Python driver and CLI for the Keysight MXG N5183B RF signal generator, used for RF characterization in radio astronomy receiver systems."
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [
     { name = "Patricio Alarcón Díaz", email = "PatrickADz@users.noreply.github.com" }
